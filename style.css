@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.encabezado {
+    background-color: cadetblue;
+    height: 100px;
+}
+
+.menu {
+    background-color: red;
+    height: 150px;
+}
+
+.principal {
+    background-color: darkgoldenrod;
+}
+
+.pieDePagina {
+    background-color: blue;
+    height: 200px;
+}
