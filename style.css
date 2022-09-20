@@ -3,6 +3,9 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+h1 {
+    margin: 0;
+}
 .encabezado {
     background-color: cadetblue;
     height: 100px;
@@ -13,6 +16,10 @@ body {
     height: 150px;
 }
 
+.menu li a {
+    color: aliceblue;
+}
+
 .principal {
     background-color: darkgoldenrod;
 }
@@ -20,4 +27,5 @@ body {
 .pieDePagina {
     background-color: blue;
     height: 200px;
+
 }
