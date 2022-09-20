@@ -14,7 +14,13 @@
     </header>
 
     <nav class="menu">
-
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Primeros Pasos</a></li>
+            <li><a href="trabajandoEnEquipo.html">Trabajando en equipo</a></li>
+            <li></li>
+            <li></li>
+        </ul>
     </nav>
 
     <main class="principal">
@@ -36,7 +42,8 @@
         <p>Recordar que hasta este momento solo le dijimos a GIT que monitoree los archivos, todavia no le indicamos que guarde los cambios realizados, es decir, que genere un punto dentro de la historia de ese archivo. </p>
         <p>Dichos puntos son los tan famosos "commits" de GIT, para generar un commit es necesario ingresar el comando "git commit -m 'mensaje Descriptivo del cambio'", dicho mensaje nos va a servir, llegado al caso de tener que reveer lo que hicimos en nuestro proyecto, para identificar puntualmente que se guardo en cada commit. </p>
         <p>Para poder ver el historial de cambios en nuestro proyecto podemos utilizar el comando 'git log' o alguna de sus tantas variantes dependiendo la cantidad de informacion que sea requerida. Al ejecutar el comando 'git log --help' se pueden visualizar algunas de las posibles opciones de comandos 'git log' o bien se puede recurrir a la documentacion para entenderlo con mas facilidad.</p>
-        <p>Entre las variantes de "git log" podemos encontrar "--oneline", el mismo me va enseñar toda la informacion de mis commits en una linea, al ejecutar dicho comando vamos a poder observar un resumen del codigo HASH (ID de nuestros commits), en que rama se realizo y el mensaje que le agregamos. Ahora si en lugar de ver menos, quiero ver mas puedo utilizar el comando "-p", el cual me permite ver las modificaciones que fueron realizadas en ese commit, el contenido que este de color rojo sera el que se quito, en verde el que se agrego y el que se mantenga sin resaltar es el que no sufrio modificaciones. </p>
+        <p>Entre las variantes de "git log" podemos encontrar "--oneline", el mismo me va enseñar toda la informacion de mis commits en una linea, al ejecutar dicho comando vamos a poder observar un resumen del codigo HASH (ID de nuestros commits), en que rama se realizo y el mensaje que le agregamos. Ahora si en lugar de ver menos, quiero ver mas puedo utilizar el comando "-p", el cual me permite ver las modificaciones que fueron realizadas en ese commit, el contenido que este de color rojo sera el que se quito, en verde el que se agrego y el que se mantenga sin resaltar es el que no sufrio modificaciones. Para salir de "git log -p" tienen que ingresar ":Q". Tambien tenemos la forma de personalizar a nuestra necesidad la informacion que deseamos obtener, esto se consigue a traves del comando '--pretty="format:(comando de info a buscar, ejemplo, %h me devuelve el codigo HASH abreviado)"'. 
+        </p>
         <p>Si llegado al caso que tengamos un archivo o carpeta que no querramos que Git monitoree, podemos hacer uso del comando '.gitignore', para poder ejecutar con exito dicho comando es necesario en primer lugar crear un archivo '.gitignore' en cuyo interior nombraremos los archivos o carpetas a ser ignoradas por Git. A continuacion si revisamos el estado de nuestros archivos vamos a poder observar que los archivos o carpetas que NO queremos que sean monitoreadas ya no aparecen y en su lugar si aparece el archivo '.gitignore' el cual debemos agregar a nuestro repositorio Git con el comando 'git add .gitignore' para luego guardarlo con el comando 'git commit -m "agregando gitignore"'.</p>
         <p>¿Cuando debo generar un <em>commit</em>? </p>
         <p>No hay una regla sobre cuando se debe realizar un commit, por el contrario, existen recomendaciones, por ejemplo; siempre que una pequeña alteracion se agregre o cuando se corrija un bag debemos hacer un commit, para que al final un conjunto de commits generen nuestro sistema como un todo y no un unico commit. Deberíamos generar un commit siempre que nuestra base de código esté en un estado que nos gustaría recordar. Nunca deberíamos tener commits de código que no funcionen, pero tampoco es interesante dejar el commit solo al final de una función.</p>
