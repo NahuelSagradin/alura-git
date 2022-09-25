@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-ul, p {
+h1, ul, p {
     margin: 0;
 }
 .encabezado {
