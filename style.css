@@ -29,3 +29,7 @@ h1, ul, p {
     height: 200px;
 
 }
+
+span {
+    font-weight: bold;
+}
