@@ -29,6 +29,12 @@
         <p>Puede que en ocasiones no encontremos <span>bug</span> en un primer testeo, realicemos un <span>commit</span> y en futuros testeos nos demos cuenta que realmente no todo funcionaba como queriamos. En estos casos, Git tambien cuenta con un comando que me permite deshacer los <span>commit</span> y en este caso para que Git pueda identificar que <span>commit</span> es el que queremos deshacer, es necesario agregar su correspondiente codigo <span>hash</span> (el cual se obtine realizando un simple log), es decir, el comando a ejecutar seria <span>git revert codigo-hash</span>, a continuacion lo que va ser es generar un nuevo <span>commit</span> deshaciendo el anterior, es por eso que nos brinda la opcion de poder modificar el mensaje con el cual vamos a identificar este nuevo <span>commit</span>. </p>
         <p>De este modo podemos ir volviendo sobre cada uno de los pasos que dimos.</p>
 
+
+
+
+        
+        <p>Ahora bien, una vez terminada y entregada la tarea requerida con urgencia podemos volver a retomar la modificacion que guardamos en <span>stash</span>, para agarrar dichos datos y traerlos nuevamente a nuestra carpeta de trabajo tenemos dos opciones; una de ellas es ejecutar el comando <span>git stash list</span>, el cual nos devolvera todos los stash que podemos agarrar y colocar en nuestro proyecto, a los cuales podremos acceder segun su posicion (la cual encontraremos entre llaves), si a continuacion ejecutamos el comando <span>git stash apply posicion</span> este va aplicar las modificaciones de dicho stash en nuestro proyecto actualmente. El inconveniente con esta forma es que luego tendriamos que ejecutar el comando <span>git stash droop</span> para eliminar esa modificacion de la lista de stash. </p>
+        <p>Lo bueno de la otra forma, hace un momento dijimos que existian dos, es que podemos hacer ambas cosas en un mismo paso, es decir, puedo agarrar la <span>ultima</span> modificacion que agregué al stash y eliminarla de esa lista, para utilizar la segunda opcion el comando a ejecutar es <span>git stash pop</span>. Al oprimir enter, el comando agarra la ultima modificacion agregada al stash, la coloca en nuestra carpeta y luego la elimina de la lista stash.</p>
     </main>
     <footer class="pieDePagina"></footer>
     
