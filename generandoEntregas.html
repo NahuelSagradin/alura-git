@@ -23,8 +23,14 @@
     </nav>
     <main class="principal">
 
+        <h1>Viendo las modificaciones</h1>
+        <p>Siempre es bueno poder hacer una revision de nuestro trabajo para llevar un mejor control o simplemente para ver como nuestro proyecto fue evolucinando. Para conseguir esto basta con ejecutar el comando <span>diff</span>, tenemos dos opciones de uso para este mismo comando, si simplemente ejecutamos <span>git diff</span> puede que no pase nada, esto se debe a que dicho comando realiza una comparacion entre dos estados, si solo ejecutamos el comando como lo planteamos al inicio, va a comparar las modificaciones que hayamos realizado (que no fueron agregadas al staged) con el ultimo commit registrado, como es de imaginar, si no realizamos midificaciones, no va aparecer nada. La segunda implementacion que le podemos dar a este comando es la de comparar dos estados (commit) en particular, este se consigue ejecutando el comando <span>git diff hash-commit-desde..hash-commit-hasta</span>, es decir seguido del comando <span>diff</span>, coloco el codigo hash del commit desde el que quiero comenzar la comparacion, coloco a continuacion <span>dos puntos '..'</span> (lo cual git interpreta como 'hasta') seguido del codigo hash del commit con el que quiero que finalice la comparacion.</p>
         
+        <p>Entonces de esta forma podemos ver las modificaciones entre commits, entre lo que estamos haciendo ahora y lo que ya fue commiteado.</p>
 
+        <h2>Como generar Entregables (versiones)</h2>
+         
+        <p></p>
     </main>
     <footer class="pieDePagina"></footer>
     
